@@ -11,25 +11,29 @@ const Login = () => {
 
   // Fonction handleLogin originale, non modifiée
   const handleLogin = async (e) => {
-    e.preventDefault();
+  e.preventDefault();
 
-    try {
-      const response = await fetch('https://phone-management-dummy-backend.onrender.com/utilisateurs');
-      const data = await response.json();
+  try {
+    const response = await fetch('https://phone-management-dummy-backend.onrender.com/utilisateurs');
+    const users = await response.json();
 
-      if (data.length > 0) {
-        const user = data[0];
-        // Enregistre l'utilisateur dans le localStorage
-        localStorage.setItem('utilisateurConnecte', JSON.stringify(user));
-        navigate('/app');
-      } else {
-        setErreur('Nom ou mot de passe incorrect.');
-      }
-    } catch (err) {
-      console.error(err);
-      setErreur('Erreur lors de la connexion.');
+    // Vérifier si l'utilisateur existe avec le bon nom et mot de passe
+    const user = users.find(
+      u => u.nom === nom && u.motDePasse === motDePasse
+    );
+
+    if (user) {
+      // Enregistre l'utilisateur dans le localStorage
+      localStorage.setItem('utilisateurConnecte', JSON.stringify(user));
+      navigate('/app');
+    } else {
+      setErreur('Nom ou mot de passe incorrect.');
     }
-  };
+  } catch (err) {
+    console.error(err);
+    setErreur('Erreur lors de la connexion.');
+  }
+};
 
   const basculerAffichageMotDePasse = () => {
     setAfficherMotDePasse(!afficherMotDePasse);
