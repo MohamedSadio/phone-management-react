@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:3001/utilisateurs?nom=${nom}&motDePasse=${motDePasse}`);
+      const response = await fetch('https://phone-management-dummy-backend.onrender.com/utilisateurs');
       const data = await response.json();
 
       if (data.length > 0) {
