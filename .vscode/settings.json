@@ -1,0 +1,16 @@
+{
+    "tailwindCSS.includeLanguages": {
+      "javascript": "html",
+      "javascriptreact": "html",
+      "typescript": "html",
+      "typescriptreact": "html"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "files.associations": {
+  "*.css": "tailwindcss"
+},
+  }
+  

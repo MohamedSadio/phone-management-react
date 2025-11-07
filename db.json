@@ -1,0 +1,91 @@
+{
+    "smartphones": [
+      {
+        "id": 1,
+        "name": "iPhone 14 Pro",
+        "brand": "Apple",
+        "description": "Dernier modèle haut de gamme d'Apple",
+        "price": 599000,
+        "ram": "6 Go",
+        "rom": "256 Go",
+        "ecran": "6.1 pouces",
+        "couleursDisponibles": ["Noir", "Argent", "Or", "Bleu"],
+        "imageUrl": "/images/iphone14Pro.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Samsung Galaxy S23 Ultra",
+        "brand": "Samsung",
+        "description": "Le smartphone phare de Samsung avec un S-Pen intégré",
+        "price": 579000,
+        "ram": "8 Go",
+        "rom": "256 Go",
+        "ecran": "6.8 pouces AMOLED",
+        "couleursDisponibles": ["Noir", "Vert", "Lavande"],
+        "imageUrl": "/images/SamsungS23.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Xiaomi 13 Pro",
+        "brand": "Xiaomi",
+        "description": "Smartphone puissant avec un excellent rapport qualité/prix",
+        "price": 459000,
+        "ram": "12 Go",
+        "rom": "256 Go",
+        "ecran": "6.73 pouces AMOLED",
+        "couleursDisponibles": ["Noir", "Blanc", "Bleu"],
+        "imageUrl": "/images/XiaomiPro.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Google Pixel 8 Pro",
+        "brand": "Google",
+        "description": "L'expérience Android pure avec des performances photographiques impressionnantes",
+        "price": 489000,
+        "ram": "12 Go",
+        "rom": "128 Go",
+        "ecran": "6.7 pouces OLED",
+        "couleursDisponibles": ["Noir", "Bleu clair", "Beige"],
+        "imageUrl": "/images/GooglePixel.jpg"
+      },
+      {
+        "id": 5,
+        "name": "iPhone 13",
+        "brand": "Apple",
+        "description": "Un excellent équilibre entre performance et prix chez Apple",
+        "price": 429000,
+        "ram": "4 Go",
+        "rom": "128 Go",
+        "ecran": "6.1 pouces",
+        "couleursDisponibles": ["Rouge", "Bleu", "Minuit", "Rose"],
+        "imageUrl": "/images/iphone13.jpg"
+      },
+      {
+        "id": 6,
+        "name": "iPhone SE (2022)",
+        "brand": "Apple",
+        "description": "Le modèle compact avec puce A15 et bouton Touch ID",
+        "price": 319000,
+        "ram": "4 Go",
+        "rom": "64 Go",
+        "ecran": "4.7 pouces",
+        "couleursDisponibles": ["Noir", "Blanc", "Rouge"],
+        "imageUrl": "/images/iphoneSE.jpg"
+      }
+    ],
+    "utilisateurs": [
+      {
+        "id": 1,
+        "nom": "Admin",
+        "motDePasse": "admin123",
+        "role": "admin"
+      },
+      {
+        "id": 2,
+        "nom": "Utilisateur",
+        "motDePasse": "user123",
+        "role": "simple"
+      }
+    ]
+  }
+  
